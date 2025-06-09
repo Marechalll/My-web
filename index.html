@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@𝔐𝔞𝔯𝔢𝔠𝔥𝔞𝔩 | guns.lol</title>
+    <meta name="description" content="Жизнь дергает меня за волосы, как проститутка.">
+    <meta name="author" content="@𝔐𝔞𝔯𝔢𝔠𝔥𝔞𝔩">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://assets.guns.lol/favicon/favicon-32x32.png">
+    <style>
+        body {
+            background-color: #000;
+            color: #073f8d;
+            font-family: 'Satoshi', sans-serif;
+            text-align: center;
+            padding: 2em;
+            overflow-x: hidden;
+        }
+        img.avatar {
+            border-radius: 50%;
+            width: 184px;
+            height: 184px;
+            box-shadow: 0 0 20px #073f8d;
+        }
+        .social a {
+            color: #073f8d;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="img/avatar.jpg" alt="avatar" class="avatar"><br><br>
+    <h1>@𝔐𝔞𝔯𝔢𝔠𝔥𝔞𝔩</h1>
+    <h3>Жизнь дергает меня за волосы, как проститутка.</h3>
+    <p>Mexico</p>
+
+    <div class="social">
+        <p>Discord: nlloginov</p>
+        <a href="https://steamcommunity.com/profiles/76561199259464101/" target="_blank">Steam</a>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bgmusic" autoplay loop>
+        <source src="audio/Straight-2-It.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        // Intentar reproducir audio tras interacción si fue bloqueado
+        window.addEventListener('click', () => {
+            const audio = document.getElementById('bgmusic');
+            if (audio.paused) audio.play();
+        });
+    </script>
+
+    <!-- Nieve -->
+    <script src="https://assets.guns.lol/guns_storm.js"></script>
+    <script>
+        snowStorm.snowColor = '#073f8d';
+        snowStorm.flakesMaxActive = 80;
+        snowStorm.useTwinkleEffect = true;
+        snowStorm.autoStart = true;
+        snowStorm.excludeMobile = false;
+    </script>
+
+</body>
+</html>
